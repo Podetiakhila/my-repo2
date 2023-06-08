@@ -3,7 +3,7 @@ services:
   devops:
     image: akhiladocker23/devopsreponit:latest
     ports:
-      - "80:80"
+      - "85:80"
     volumes:
       - "devopsvol"
     deploy:
@@ -12,7 +12,7 @@ services:
   aws:
     image: akhiladocker23/awsreponit:latest
     ports:
-      - "81:80"
+      - "86:80"
     volumes:
       - "awsvol"
     deploy:
@@ -21,7 +21,7 @@ services:
   datascience:
     image: akhiladocker23/datasciencereponit:latest
     ports:
-      - "82:80"
+      - "87:80"
     volumes:
       - "datasciencevol"
     deploy:
@@ -30,7 +30,7 @@ services:
   azure:
     image: akhiladocker23/azurereponit:latest
     ports:
-      - "83:80"
+      - "88:80"
     volumes:
       - "azurevol"
     deploy:
