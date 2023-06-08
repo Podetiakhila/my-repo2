@@ -1,0 +1,37 @@
+version: '3'
+services:
+  devops:
+    image: akhiladocker23/devopsreponit:latest
+    ports:
+      - "80:80"
+    volumes:
+      - "devopsvol"
+    deploy:
+      replicas: 3
+
+  aws:
+    image: akhiladocker23/awsreponit:latest
+    ports:
+      - "81:80"
+    volumes:
+      - "awsvol"
+    deploy:
+      replicas: 3
+
+  datascience:
+    image: akhiladocker23/datasciencereponit:latest
+    ports:
+      - "82:80"
+    volumes:
+      - "datasciencevol"
+    deploy:
+      replicas: 3
+
+  azure:
+    image: akhiladocker23/azurereponit:latest
+    ports:
+      - "83:80"
+    volumes:
+      - "azurevol"
+    deploy:
+      replicas: 3
